@@ -24,7 +24,7 @@ Matplotlib library was used to draw plots. <br/>
 <h3> Methods </h3>
 
 The Q-Learning algorithm is one of the most well-known algorithms of reinforcement learning. The main purpose of the algorithm is to examine the next moves and calcuate the reward that will be earned according to the examination. <br/> <br/>
-The reward values are kept in the reward table (which is randomly generated). The robot's experience will be shaped according to this reward table. On the way to the goal, the robot uses the experience gained in each iteration to maximize the places he can go. The robot keeps these experiences in a table called the Q-Table. 
+The reward values are kept in the reward table (which is randomly generated). The robot's experience will be shaped according to this reward table. On the way to the goal, the robot uses the experience gained in each iteration to maximize the places he can go. The robot keeps these experiences in a table called the Q-Table. <br/>
 <img src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/QandRMatrices.png"/> <br/> <br/>
 In this project, the aim is to find the shortest path in the grid for a start and exit point selected by the user. To achieve this, Q Learning Algorithm will be applied.
 In order to apply the Q Learning Algorithm, the environment must first be defined. The environment consists of three components:
