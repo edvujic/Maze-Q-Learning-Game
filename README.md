@@ -33,7 +33,7 @@ In order to apply the Q Learning Algorithm, the environment must first be define
   <li> Rewards </li>
 </ul>
 <br/>The agent is expected to take states and rewards as input and produce actions according to them.
-
+<br/> <br/>
 <p> Red squares in the grid represent obstacles, blue squares agent, green squares exit (target), white squares represent paths through which the agent can pass.
 Each position (square) in the grid is a state. Each situation has a row and column number. Red and green squares are called terminal states.
 A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
