@@ -52,7 +52,7 @@ A training episode will end when the agent gets to the red or green square. If i
 
 <h3> Auxiliary Functions </h3>
 
-<img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Aux_Functions.png"/>
+<img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/aux_func.png"/>
 
 <h3> Result </h3>
 <p>
