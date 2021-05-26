@@ -38,7 +38,7 @@ In order to apply the Q Learning Algorithm, the environment must first be define
 <br/>
 <p> Red squares in the grid represent obstacles, blue squares agent, green squares exit (target), white squares represent paths through which the agent can pass.
 Each position (square) in the grid is a state. Each situation has a row and column number. Red and green squares are called terminal states.
-A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
+A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square.
 </p>
 <img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Actions.png"/>
 <p>There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. </p>
