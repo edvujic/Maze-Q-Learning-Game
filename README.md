@@ -39,4 +39,5 @@ Each position (square) in the grid is a state. Each situation has a row and colu
 A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
 </p>
 <br/>
-There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares.
+There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. <br/>
+In order for the agent to learn, each situation must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every situation except the exit (target) situation. This helps the agent find the shortcut because the agent always tries to minimize the punishment.
