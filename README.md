@@ -32,6 +32,5 @@ In order to apply the Q Learning Algorithm, the environment must first be define
   <li> Actions </li>
   <li> Rewards </li?
 </ul>
-<br/> <br/>
-The agent is expected to take states and rewards as input and produce actions according to them.
+<br/> <br/>The agent is expected to take states and rewards as input and produce actions according to them.
 
