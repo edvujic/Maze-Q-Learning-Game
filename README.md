@@ -44,4 +44,6 @@ A training episode will end when the agent gets to the red or green square. If i
 
 <p>The number of steps and rewards are calculated for each episode. After the starting position of the agent is taken, the Q table is updated by using Bellman equation in each section for the actions that the agent randomly chooses until the agent reaches a red square. Temporary difference is calculated with Bellman equation.</p>
 
-<img align = "center" src="https://latex.codecogs.com/gif.latex?TD&space;=&space;r_{t}&space;&plus;&space;(\gamma&space;*&space;Q_{max}(x,y))&space;-&space;Q_{old}" title="TD = r_{t} + (\gamma * Q_{max}(x,y)) - Q_{old}" />
+<img src="https://latex.codecogs.com/gif.latex?TD&space;=&space;r_{t}&space;&plus;&space;(\gamma&space;*&space;Q_{max}(x,y))&space;-&space;Q_{old}" title="TD = r_{t} + (\gamma * Q_{max}(x,y)) - Q_{old}" />
+
+<p>Once this has been done for 100,000 episodes, the agent may have been adequately trained. If it is not sufficiently trained, this code snippet must be rerun.</p>
