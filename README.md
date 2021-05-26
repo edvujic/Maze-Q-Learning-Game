@@ -11,3 +11,12 @@ Python, Numpy, Jupyter, PySimpleGUI, PyGame, Matplotlib, Maze, Agent, Situation,
 
 Our robot must use the Q learning algorithm to escape from the obstacles and travel through the white areas. If our robot starts from the blue square and reaches the end in the shortest (cost efficient) way without hitting the red boxes, it will be considered successful.
 The robot can move right, left, up and down starting from any white square. The steps taken must be decisive and will succeed unless the agent hits an obstacle. As a result, the robot receives the reward from the starting point to the desired target.
+
+<h3> Concepts </h3>
+
+Python 3 language was used as the programming language. 
+Jupyter Notebook was used as the development environment. 
+PyGame was used for visualization. 
+Numpy library was used for Q Learning. 
+PySimpleGUI library was used for interface design. 
+Matplotlib library was used to draw plots.
