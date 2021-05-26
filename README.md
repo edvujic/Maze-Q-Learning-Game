@@ -33,7 +33,8 @@ In order to apply the Q Learning Algorithm, the environment must first be define
   <li> Actions </li>
   <li> Rewards </li>
 </ul>
-<br/>The agent is expected to take states and rewards as input and produce actions according to them.
+<br/>The agent is expected to take states and rewards as input and produce actions according to them. <br/>
+<img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Grid_States.png"/>
 <br/> <br/>
 <p> Red squares in the grid represent obstacles, blue squares agent, green squares exit (target), white squares represent paths through which the agent can pass.
 Each position (square) in the grid is a state. Each situation has a row and column number. Red and green squares are called terminal states.
