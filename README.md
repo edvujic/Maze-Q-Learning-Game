@@ -35,12 +35,12 @@ In order to apply the Q Learning Algorithm, the environment must first be define
 </ul>
 <br/>The agent is expected to take states and rewards as input and produce actions according to them. <br/>
 <img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Grid_States.png"/>
-<br/> <br/>
+<br/>
 <p> Red squares in the grid represent obstacles, blue squares agent, green squares exit (target), white squares represent paths through which the agent can pass.
 Each position (square) in the grid is a state. Each situation has a row and column number. Red and green squares are called terminal states.
 A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
 </p>
-
+<img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Actions.png"/>
 <p>There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. </p>
 <p>In order for the agent to learn, each state must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every state except the exit (target) state. This helps the agent find the shortcut because the agent always tries to minimize the punishment. </p>
 
@@ -49,3 +49,7 @@ A training episode will end when the agent gets to the red or green square. If i
 <img src="https://latex.codecogs.com/gif.latex?TD&space;=&space;r_{t}&space;&plus;&space;(\gamma&space;*&space;Q_{max}(x,y))&space;-&space;Q_{old}" title="TD = r_{t} + (\gamma * Q_{max}(x,y)) - Q_{old}" />
 
 <p>Once this has been done for 100,000 episodes, the agent may have been adequately trained. If it is not sufficiently trained, this code snippet must be rerun.</p>
+
+<h3> Auxiliary Functions </h3>
+
+<img src = "https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Aux_Functions.png"/>
