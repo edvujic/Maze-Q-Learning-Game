@@ -9,7 +9,7 @@ Python, Numpy, Jupyter, PySimpleGUI, PyGame, Matplotlib, Maze, Agent, Situation,
 
 <h3> Introduction </h3> 
 
-Our robot must use the Q learning algorithm to escape from the obstacles and travel through the white areas. If our robot starts from the blue square and reaches the end in the shortest (cost efficient) way without hitting the red boxes, it will be considered successful.
+Our robot (agent) must use the Q learning algorithm to escape from the obstacles and travel through the white areas. If our robot starts from the blue square and reaches the end in the shortest (cost efficient) way without hitting the red boxes, it will be considered successful.
 The robot can move right, left, up and down starting from any white square. The steps taken must be decisive and will succeed unless the agent hits an obstacle. As a result, the robot receives the reward from the starting point to the desired target.
 
 <h3> Concepts </h3>
@@ -38,6 +38,6 @@ In order to apply the Q Learning Algorithm, the environment must first be define
 Each position (square) in the grid is a state. Each situation has a row and column number. Red and green squares are called terminal states.
 A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
 </p>
-<br/>
-There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. <br/>
-In order for the agent to learn, each situation must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every situation except the exit (target) situation. This helps the agent find the shortcut because the agent always tries to minimize the punishment.
+
+<p>There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. </p>
+<p>In order for the agent to learn, each situation must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every situation except the exit (target) situation. This helps the agent find the shortcut because the agent always tries to minimize the punishment. </p>
