@@ -6,3 +6,8 @@ By using the Reinforcement Learning method (sub-branch of machine learning) the 
 <h3> Keywords </h3>
 
 Python, Numpy, Jupyter, PySimpleGUI, PyGame, Matplotlib, Maze, Agent, Situation, Action, Shortest Path, Grid, Q Learning, Reinforcement Learning, Rewarding, Section, Training, Auxiliary Functions, Machine Learning, Bellman, Q Table, R Table.
+
+<h3> Introduction </h3> 
+
+Our robot must use the Q learning algorithm to escape from the obstacles and travel through the white areas. If our robot starts from the blue square and reaches the end in the shortest (cost efficient) way without hitting the red boxes, it will be considered successful.
+The robot can move right, left, up and down starting from any white square. The steps taken must be decisive and will succeed unless the agent hits an obstacle. As a result, the robot receives the reward from the starting point to the desired target.
