@@ -14,9 +14,9 @@ The robot can move right, left, up and down starting from any white square. The 
 
 <h3> Concepts </h3>
 
-Python 3 language was used as the programming language. 
-Jupyter Notebook was used as the development environment. 
-PyGame was used for visualization. 
-Numpy library was used for Q Learning. 
-PySimpleGUI library was used for interface design. 
-Matplotlib library was used to draw plots.
+Python 3 language was used as the programming language. <br/>
+Jupyter Notebook was used as the development environment. <br/>
+PyGame was used for visualization. <br/>
+Numpy library was used for Q Learning. <br/>
+PySimpleGUI library was used for interface design. <br/>
+Matplotlib library was used to draw plots. <br/>
