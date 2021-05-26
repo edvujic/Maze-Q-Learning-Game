@@ -58,15 +58,11 @@ A training episode will end when the agent gets to the red or green square. If i
 <p>
   Start = (0,0) <br/>
   End = (49,49) <br/>
-  <img src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/solved_maze.jpg"/>
+  <img width = "700px" src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/solved_maze.jpg"/>
 </p>
 
 <p> 
-  Step via episodes plot <br/>
-  <img src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/steps_via_episode.jpg"/>
+  <img align ="left" src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/steps_via_episode.jpg"/>
+  <img align ="left" src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/cost_via_episode.jpg"/>
 </p>
 
-<p> 
-  Cost via episodes plot <br/>
-  <img src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/cost_via_episodes.jpg"/>
-</p>
