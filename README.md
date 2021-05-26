@@ -13,7 +13,7 @@ Our robot (agent) must use the Q learning algorithm to escape from the obstacles
 The robot can move right, left, up and down starting from any white square. The steps taken must be decisive and will succeed unless the agent hits an obstacle. As a result, the robot receives the reward from the starting point to the desired target.
 
 <h3> Concepts </h3>
-
+<img src="https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/libraries.png"/>
 Python 3 language was used as the programming language. <br/>
 Jupyter Notebook was used as the development environment. <br/>
 PyGame was used for visualization. <br/>
