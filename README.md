@@ -40,4 +40,8 @@ A training episode will end when the agent gets to the red or green square. If i
 </p>
 
 <p>There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares. </p>
-<p>In order for the agent to learn, each situation must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every situation except the exit (target) situation. This helps the agent find the shortcut because the agent always tries to minimize the punishment. </p>
+<p>In order for the agent to learn, each state must have a rewarding coefficient. The agent can start on any white square, but his goal is always the same - to maximize reward. In this case, the concept of negative rewarding is encountered. Negative reward is punishment and is used for every state except the exit (target) state. This helps the agent find the shortcut because the agent always tries to minimize the punishment. </p>
+
+<p>The number of steps and rewards are calculated for each episode. After the starting position of the agent is taken, the Q table is updated by using Bellman equation in each section for the actions that the agent randomly chooses until the agent reaches a red square. Temporary difference is calculated with Bellman equation.</p>
+
+<img src="https://latex.codecogs.com/gif.latex?TD&space;=&space;r_{t}&space;&plus;&space;(\gamma&space;*&space;Q_{max}(x,y))&space;-&space;Q_{old}" title="TD = r_{t} + (\gamma * Q_{max}(x,y)) - Q_{old}" />
