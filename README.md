@@ -20,3 +20,17 @@ PyGame was used for visualization. <br/>
 Numpy library was used for Q Learning. <br/>
 PySimpleGUI library was used for interface design. <br/>
 Matplotlib library was used to draw plots. <br/>
+
+<h3> Methods </h3>
+
+The Q-Learning algorithm is one of the most well-known algorithms of reinforcement learning. The main purpose of the algorithm is to examine the next moves and calcuate the reward that will be earned according to the examination. <br/>
+The reward values are kept in the reward table (which is randomly generated). The robot's experience will be shaped according to this reward table. On the way to the goal, the robot uses the experience gained in each iteration to maximize the places he can go. The robot keeps these experiences in a table called the Q-Table. <br/>
+In this project, it is aimed to find the shortest path in the grid for an entry and exit selected by the user. To achieve this, Q Learning Algorithm will be applied.
+In order to apply the Q Learning Algorithm, the environment must first be defined. The environment consists of three components:
+<ul>
+  <li> States </li>
+  <li> Actions </li>
+  <li> Rewards </li?
+</ul>
+The agent is expected to take states and rewards as input and produce actions according to them.
+
