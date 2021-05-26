@@ -39,3 +39,7 @@ Each position (square) in the grid is a state. Each situation has a row and colu
 A training episode will end when the agent gets to the red or green square. If it reaches the green square, the agent has arrived at its target, but if it reaches a red square, it will fail due to the wrong move. When it comes to a white square, it will move to another square
 </p>
 
+<br/> <br/>
+There are 4 actions in this scenario. The agent can go up, down, right or left. Naturally, the agent is expected to learn not to hit the red squares.
+
+
