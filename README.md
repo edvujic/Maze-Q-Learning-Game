@@ -1,49 +1,60 @@
-# Maze Solver Using Q Learning Reinforcement Algorithm
+# Navigating Complex Mazes with Q Learning: A Reinforcement Learning Approach
 
 ## Abstract
 
-This project utilizes the Q Learning Algorithm, a reinforcement learning method, to guide an agent through a maze to reach its target. The goal is to navigate the agent from a starting point to an endpoint by moving through the maze in the most efficient way possible, avoiding obstacles and seeking the shortest path.
+This study presents an implementation of the Q Learning algorithm, a form of reinforcement learning, to autonomously navigate an agent through a maze. The agent's objective is to traverse from a defined start position to a designated end position by identifying the most effective path, while circumventing obstacles. The efficacy of the agent is determined by its ability to find the shortest possible route to the goal without hitting any barriers. Through iterative training, the agent learns to make strategic decisions to achieve its target with increasing efficiency.
 
 ## Keywords
 
-Python, Numpy, Jupyter, PySimpleGUI, PyGame, Matplotlib, Maze, Agent, Situation, Action, Shortest Path, Grid, Q Learning, Reinforcement Learning, Rewarding, Episode, Training, Auxiliary Functions, Machine Learning, Bellman, Q Table, R Table
+- Python
+- Reinforcement Learning
+- Q Learning
+- Maze Solving
+- Agent Navigation
+- Q Table
+- R Table
+- PySimpleGUI
+- PyGame
+- Numpy
+- Jupyter Notebook
+- Matplotlib
 
 ## Introduction
 
-In this project, our agent (a simulated robot) must escape from obstacles and navigate through the maze using the Q learning algorithm. The agent must find the most cost-efficient route from the starting blue square to the endpoint without colliding with any red boxes to be considered successful. The agent can move in four directions: right, left, up, and down, from any white square. Each step is critical for the success of the mission, and rewards are given based on the agent's performance from start to finish.
+The research focuses on applying the Q Learning algorithm to empower a virtual agent, akin to a robotic entity, to solve a maze challenge. The problem space is a grid-like maze where the agent must maneuver from an initial blue square to a terminal green square. The agent can move in four cardinal directions—north, south, east, and west—on the white squares that constitute the traversable path. Successful navigation relies on the agent's ability to minimize the path length while avoiding collisions with red squares, which represent obstacles. The learning process is driven by rewards and penalties, with each action impacting the agent's performance from inception to completion.
 
 ## Concepts
 
-The project is developed using the Python 3 programming language, with Jupyter Notebook as the development environment. PyGame is used for visualization, while the Numpy library supports the Q Learning process. PySimpleGUI helps with interface design, and Matplotlib is used for plotting.
+Developed in Python 3 and leveraging the interactive capabilities of Jupyter Notebook, the project integrates various libraries to support development and visualization. PyGame is utilized for dynamic rendering of the maze-solving process, Numpy for numerical computations essential to the Q Learning algorithm, PySimpleGUI for crafting a user-friendly interface, and Matplotlib for visual representation of the agent's learning progress and strategies.
 
-![Libraries](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/libraries.png)
+![Python Libraries Used](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/libraries.png)
 
 ## Methods
 
-Q-Learning is a prominent algorithm in reinforcement learning. It involves assessing potential moves and calculating the associated rewards. A reward table holds these values, guiding the robot's decisions. Experiences are stored in a Q-Table, which the robot updates as it learns.
+Q Learning, a model-free reinforcement learning algorithm, is central to this study. It functions by evaluating potential actions in given states and computing the rewards associated with those actions. These values are stored in a reward matrix (R Table), which informs the agent's decision-making process. Additionally, the Q Table maintains a record of experiences, which are iteratively updated as the agent accrues knowledge of the environment.
 
-![Q and R Matrices](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/QandRMatrices.png)
+![Q and R Matrices Illustration](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/QandRMatrices.png)
 
-The environment for the Q Learning Algorithm consists of states, actions, and rewards:
+The Q Learning framework is built upon states, actions, and rewards:
 
-- **States**: Each position in the grid represents a state, with each state corresponding to a row and column number. Red and green squares are terminal states.
-- **Actions**: The agent can move up, down, right, or left, learning to avoid hitting red squares.
-- **Rewards**: States have associated rewards, and the agent seeks to maximize these rewards.
+- **States**: Each grid cell is a discrete state, with specific coordinates in the maze. Certain states are designated as terminal (red and green squares).
+- **Actions**: The agent can move in four directions, learning to avoid obstacles (red squares) and aim for the goal (green square).
+- **Rewards**: Each state is assigned a reward value, with the agent's goal being the maximization of its cumulative reward.
 
-![Grid States](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Grid_States.png)
+![Visualization of Grid States](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Grid_States.png)
 
-Training involves episodes where the agent navigates the grid, with the Q table updated using the Bellman equation.
-
-![Actions](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Actions.png)
+The agent's training consists of episodes in which it explores the grid. The Q Table is updated according to the Bellman equation:
 
 `TD = r_t + (γ * Q_max(x,y)) - Q_old`
 
-After sufficient training, the agent will have learned to navigate the maze efficiently.
+With sufficient training, the agent is expected to gain proficiency in solving the maze efficiently.
+
+![Representation of Possible Actions](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/Actions.png)
 
 ## Auxiliary Functions
 
-![Auxiliary Functions](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/aux_func.png)
+![Depiction of Auxiliary Functions](https://raw.githubusercontent.com/edvujic/YAZLABII-3Project-Maze-Q-Learning/main/pictures/aux_func.png)
 
-## Result
+## Outcome
 
-The agent successfully navigated from the start `(0,0)` to the end `(49,49)`.
+Upon conclusion of the training sessions, the agent demonstrated the capability to effectively navigate from the starting point at `(0,0)` to the goal at `(49,49)`. The successful implementation of the Q Learning algorithm illustrates its potential for solving complex pathfinding problems and paves the way for its application in various domains requiring autonomous navigation and decision-making.
